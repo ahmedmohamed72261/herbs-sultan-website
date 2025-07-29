@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HerbaCure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/button-animations.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="logo-container">
+        <img src="assets/images/logo.png" alt="HerbaCure Logo" class="logo" />
+        <div class="brand-text">
+          <h1>HerbaCure</h1>
+          <p>Organic & Natural Products</p>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Search and cart removed -->
+      <div class="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- Hero Slider Section -->
+    <section class="hero-slider">
+      <div class="slider-container">
+        <div class="slide active">
+          <div
+            class="slide-image"
+            style="background-image: url('assets/images/slider1.jpg')"
+          ></div>
+          <div class="slide-content">
+            <h1 data-aos="fade-up">Organic Herbs & Spices</h1>
+            <p data-aos="fade-up" data-aos-delay="100">
+              Discover our premium selection of certified organic herbs and
+              spices, sourced from sustainable farms around the world.
+            </p>
+            <button class="shop-now btn-slide">
+              Explore Organic Collection
+            </button>
+          </div>
+        </div>
+        <div class="slide">
+          <div
+            class="slide-image"
+            style="background-image: url('assets/images/slider2.jpg')"
+          ></div>
+          <div class="slide-content">
+            <h1 data-aos="fade-up">Health & Wellness</h1>
+            <p data-aos="fade-up" data-aos-delay="100">
+              Enhance your health with our natural products, carefully selected
+              for their nutritional benefits and healing properties.
+            </p>
+            <button class="shop-now btn-bounce">
+              Discover Health Benefits
+            </button>
+          </div>
+        </div>
+        <div class="slide">
+          <div
+            class="slide-image"
+            style="background-image: url('assets/images/slider3.jpg')"
+          ></div>
+          <div class="slide-content">
+            <h1 data-aos="fade-up">Sustainable Farming</h1>
+            <p data-aos="fade-up" data-aos-delay="100">
+              We partner with farmers who practice sustainable agriculture,
+              ensuring environmental preservation and product quality.
+            </p>
+            <button class="shop-now btn-shine">Learn About Our Farms</button>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="prev-slide">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+          </div>
+          <button class="next-slide">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Organic Products Section -->
+    <section id="organic" class="organic-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Our Organic Products</h2>
+        <div class="organic-intro" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            At Herb & Spice Market, we believe in the power of organic farming
+            and sustainable agriculture. Our organic products are grown without
+            synthetic pesticides, fertilizers, or GMOs, ensuring you receive the
+            purest, most nutritious ingredients possible.
+          </p>
+        </div>
+
+        <div class="organic-benefits" data-aos="fade-up">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Naturally Grown</h3>
+            <p>
+              Our products are grown using natural methods that preserve soil
+              health and biodiversity.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Certified Organic</h3>
+            <p>
+              All our organic products are certified by recognized international
+              organic certification bodies.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Health Benefits</h3>
+            <p>
+              Organic products contain higher levels of beneficial nutrients and
+              antioxidants.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <h3>Eco-Friendly</h3>
+            <p>
+              Our organic farming practices help reduce pollution and conserve
+              water and energy.
+            </p>
+          </div>
+        </div>
+
+        <div class="organic-featured" data-aos="fade-up">
+          <div class="featured-image">
+            <img
+              src="assets/images/organic-farming.jpg"
+              alt="Organic Farming"
+            />
+          </div>
+          <div class="featured-content">
+            <h3>From Farm to Table</h3>
+            <p>
+              We work directly with organic farmers around the world to bring
+              you the freshest, highest-quality herbs and spices. Our
+              transparent supply chain ensures that you know exactly where your
+              food comes from.
+            </p>
+            <p>
+              By choosing organic, you're not only making a healthier choice for
+              yourself and your family, but you're also supporting sustainable
+              farming practices that protect our planet for future generations.
+            </p>
+            <button class="learn-more-btn btn-bounce">
+              Learn More About Organic
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="featured-products" class="featured-products-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Featured Products</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Discover our premium selection of organic herbs and spices
+        </p>
+        
+        <!-- Category Tabs for Home Products -->
+        <div class="category-tabs" id="home-category-tabs" data-aos="fade-up" data-aos-delay="150">
+          <!-- Category tabs will be loaded dynamically by home-products.js -->
+        </div>
+        
+        <div class="gallery-grid" id="home-products-grid" data-aos="fade-up" data-aos-delay="200">
+          <!-- Products will be loaded dynamically by home-products.js -->
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+      <h2 class="section-title" data-aos="fade-up">About Us</h2>
+      <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+        <div class="about-image">
+          <img src="assets/images/coconut.jpg" alt="Fresh Coconut" />
+        </div>
+        <div class="about-text">
+          <h3>Our Story</h3>
+          <p>
+            We are dedicated to providing the highest quality herbs, spices, and
+            natural food products from around the world. Our mission is to
+            promote healthy eating and living through natural ingredients that
+            enhance the flavor of your food while providing numerous health
+            benefits.
+          </p>
+          <p>
+            All our products are sourced from trusted farmers and suppliers who
+            share our commitment to quality and sustainability. We carefully
+            select each item to ensure it meets our high standards before it
+            reaches your kitchen.
+          </p>
+          <button class="read-more btn-bounce">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="videos-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">
+          HerbaCure Video Gallery
+        </h2>
+        <p class="section-subtitle" data-aos="fade-up">
+          Experience the HerbaCure difference through our exclusive videos
+          showcasing our organic herbs, sustainable farming practices, and
+          expert culinary techniques
+        </p>
+
+        <div class="video-grid">
+          <div class="video-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="video-card-media">
+              <div
+                class="video-thumbnail"
+                style="
+                  background-image: url('assets/images/video1.jpg');
+                  background-attachment: fixed;
+                  background-position: center;
+                "
+              >
+                <div class="play-icon-wrapper">
+                  <div class="play-icon">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="video-duration">5:24</div>
+                <video class="video-player" poster="assets/images/video1.jpg">
+                  <source
+                    src="assets/videos/cooking-video.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <div class="video-card-content">
+              <h3 class="video-title">HerbaCure: The Art of Organic Cooking</h3>
+              <div class="video-meta">
+                <span class="video-author">HerbaCure Official</span>
+                <span class="video-views">1.2K views</span>
+              </div>
+              <p class="video-description">
+                Discover the HerbaCure difference in your kitchen. Our premium
+                organic herbs transform ordinary meals into extraordinary
+                culinary experiences. Learn expert techniques from our master
+                herbalists.
+              </p>
+              <button class="watch-now-btn">
+                <span>Watch Now</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="video-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="video-card-media">
+              <div
+                class="video-thumbnail"
+                style="
+                  background-image: url('assets/images/video2.jpg');
+                  background-attachment: fixed;
+                  background-position: center;
+                "
+              >
+                <div class="play-icon-wrapper">
+                  <div class="play-icon">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="video-duration">3:45</div>
+                <video class="video-player" poster="assets/images/video2.jpg">
+                  <source
+                    src="assets/videos/harvesting-video.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <div class="video-card-content">
+              <h3 class="video-title">HerbaCure: From Nature to Your Table</h3>
+              <div class="video-meta">
+                <span class="video-author">HerbaCure Official</span>
+                <span class="video-views">987 views</span>
+              </div>
+              <p class="video-description">
+                Journey with HerbaCure to our sustainable farms around the
+                world. See how we carefully select and harvest each herb to
+                ensure maximum potency and purity, while maintaining our
+                commitment to environmental stewardship.
+              </p>
+              <button class="watch-now-btn">
+                <span>Watch Now</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-section-footer" data-aos="fade-up">
+          <a href="#" class="view-all-btn">
+            <span>View All Videos</span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>123 Spice Market Street, Herb City, HC 12345</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>+1 (555) 123-4567</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>info@herbandspice.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <p>Mon-Fri: 9am-6pm, Sat: 10am-4pm</p>
+          </div>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2sBroadway%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1580908535830!5m2!1sen!2s"
+            width="100%"
+            height="300"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-logo-container">
+        <img
+          src="assets/images/logo.png"
+          alt="HerbaCure Logo"
+          class="footer-logo"
+        />
+      </div>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Organic Products</a></li>
+            <li><a href="#">Bulk Orders</a></li>
+            <li><a href="#">Gift Sets</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Information</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Shipping Information</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter for updates and promotions</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your Email" />
+            <button class="btn-shine">Subscribe</button>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="pinterest"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 HerbaCure. All Rights Reserved.</p>
+      </div>
+
+      <div class="creator-section">
+        <p>Created by <span class="creator-name">Ahmed Mohamed</span></p>
+        <a
+          href="https://wa.me/201009480722"
+          class="creator-contact"
+          target="_blank"
+        >
+          <i class="fab fa-whatsapp"></i> +20 100 948 0722
+        </a>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/201009480722"
+      class="whatsapp-button"
+      target="_blank"
+      title="Contact Ahmed Mohamed"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Go to Top Button -->
+    <a href="#" class="go-to-top" id="goToTop">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/api-service.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/home-products.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/videos.js"></script>
+    <script src="js/scroll-to-top.js"></script>
+    <script src="js/notifications.js"></script>
+  </body>
+</html>

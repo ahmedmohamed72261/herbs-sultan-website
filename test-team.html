@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Test - HerbaCure</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="css/team.css" />
+    <style>
+        /* Quick test styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2c5530;
+            margin-bottom: 20px;
+        }
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <section class="team-grid-section">
+        <div class="container">
+            <h2 class="section-title">Team Test</h2>
+            <p class="section-subtitle">Testing the enhanced team member cards</p>
+            <div class="team-grid" id="team-grid">
+                <div class="loading-team">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading team members...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Member Modal -->
+    <div class="team-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <div class="modal-image-container">
+                    <img id="modal-image" src="" alt="Team Member" />
+                </div>
+                <div class="modal-basic-info">
+                    <h2 id="modal-name">Team Member Name</h2>
+                    <h3 id="modal-position">Position</h3>
+                    <div class="modal-department" id="modal-department">Department</div>
+                    <div class="modal-experience" id="modal-experience"></div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h4><i class="fas fa-user"></i> About</h4>
+                    <p id="modal-bio">Team member biography will appear here.</p>
+                </div>
+                <div class="modal-section" id="modal-qualifications-section">
+                    <h4><i class="fas fa-graduation-cap"></i> Qualifications</h4>
+                    <div id="modal-qualifications"></div>
+                </div>
+                <div class="modal-section" id="modal-specializations-section">
+                    <h4><i class="fas fa-star"></i> Specializations</h4>
+                    <div id="modal-specializations"></div>
+                </div>
+                <div class="modal-section" id="modal-languages-section">
+                    <h4><i class="fas fa-language"></i> Languages</h4>
+                    <div id="modal-languages"></div>
+                </div>
+                <div class="modal-section" id="modal-contact-section">
+                    <h4><i class="fas fa-envelope"></i> Contact</h4>
+                    <div id="modal-contact"></div>
+                </div>
+                <div class="modal-section" id="modal-social-section">
+                    <h4><i class="fas fa-share-alt"></i> Connect</h4>
+                    <div class="modal-social" id="modal-social"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/api-service.js"></script>
+    <script src="js/team.js"></script>
+</body>
+</html>
