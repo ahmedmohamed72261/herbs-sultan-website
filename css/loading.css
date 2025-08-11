@@ -133,6 +133,10 @@
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
+    .loading-overlay {
+        padding: 20px;
+    }
+    
     .loading-logo {
         width: 100px;
         height: 100px;
@@ -140,14 +144,35 @@
     
     .loading-text {
         font-size: 20px;
+        letter-spacing: 1px;
+        padding: 0 20px;
+        text-align: center;
+        line-height: 1.4;
     }
     
     .loading-progress {
-        width: 180px;
+        width: 80%;
+        max-width: 250px;
+        min-width: 180px;
+    }
+    
+    .loading-spinner {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .loading-status {
+        font-size: 13px;
+        padding: 0 20px;
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .loading-overlay {
+        padding: 15px;
+    }
+    
     .loading-spinner {
         width: 60px;
         height: 60px;
@@ -155,9 +180,82 @@
     
     .loading-text {
         font-size: 18px;
+        letter-spacing: 0.5px;
+        padding: 0 15px;
+        margin-top: 15px;
     }
     
     .loading-progress {
-        width: 150px;
+        width: 90%;
+        max-width: 200px;
+        min-width: 150px;
+        margin-top: 20px;
+    }
+    
+    .loading-status {
+        font-size: 12px;
+        margin-top: 8px;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .loading-overlay {
+        padding: 10px;
+    }
+    
+    .loading-spinner {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .loading-text {
+        font-size: 16px;
+        margin-top: 12px;
+        padding: 0 10px;
+    }
+    
+    .loading-progress {
+        width: 95%;
+        max-width: 180px;
+        margin-top: 15px;
+    }
+    
+    .loading-status {
+        font-size: 11px;
+        margin-top: 6px;
+        padding: 0 10px;
+    }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .loading-overlay {
+        padding: 10px;
+    }
+    
+    .loading-content {
+        transform: scale(0.8);
+    }
+    
+    .loading-spinner {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .loading-text {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    
+    .loading-progress {
+        width: 200px;
+        margin-top: 10px;
+    }
+    
+    .loading-status {
+        font-size: 11px;
+        margin-top: 5px;
     }
 }

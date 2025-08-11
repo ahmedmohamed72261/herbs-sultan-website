@@ -50,9 +50,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Prevent body scrolling when menu is open
     if (navLinks.classList.contains("show")) {
-      document.body.style.overflow = "hidden";
+      document.body.classList.add("menu-open");
+      // Store current scroll position
+      const scrollY = window.scrollY;
+      document.body.style.top = `-${scrollY}px`;
     } else {
-      document.body.style.overflow = "";
+      document.body.classList.remove("menu-open");
+      // Restore scroll position
+      const scrollY = document.body.style.top;
+      document.body.style.top = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
   }
 
@@ -61,7 +68,12 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.classList.remove("show");
     menuOverlay.classList.remove("show");
     mobileMenuBtn.classList.remove("active");
-    document.body.style.overflow = "";
+    
+    // Restore body scroll
+    document.body.classList.remove("menu-open");
+    const scrollY = document.body.style.top;
+    document.body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
   }
 
   // Cart functionality removed
