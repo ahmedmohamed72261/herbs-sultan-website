@@ -631,7 +631,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem;
     transform: translateY(-50%);
     pointer-events: none;
 }
@@ -724,9 +723,6 @@
         font-size: 1rem;
     }
     
-    .product-image-modal .modal-navigation {
-        padding: 0 1rem;
-    }
 }
 
 @media (max-width: 576px) {

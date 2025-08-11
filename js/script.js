@@ -42,27 +42,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Store scroll position for mobile menu
-  let scrollPosition = 0;
-
   // Toggle mobile menu
   function toggleMobileMenu() {
-    const isMenuOpen = navLinks.classList.contains("show");
-    
-    if (!isMenuOpen) {
-      // Opening menu
-      scrollPosition = window.pageYOffset;
-      navLinks.classList.add("show");
-      menuOverlay.classList.add("show");
-      mobileMenuBtn.classList.add("active");
+    navLinks.classList.toggle("show");
+    menuOverlay.classList.toggle("show");
+    mobileMenuBtn.classList.toggle("active");
+
+    // Prevent body scrolling when menu is open
+    if (navLinks.classList.contains("show")) {
       document.body.classList.add("menu-open");
-      document.body.style.top = `-${scrollPosition}px`;
-      
-      // Prevent touch scrolling on iOS
-      document.addEventListener('touchmove', preventScroll, { passive: false });
+      // Store current scroll position
+      const scrollY = window.scrollY;
+      document.body.style.top = `-${scrollY}px`;
     } else {
-      // Closing menu
-      closeMobileMenu();
+      document.body.classList.remove("menu-open");
+      // Restore scroll position
+      const scrollY = document.body.style.top;
+      document.body.style.top = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
   }
 
@@ -71,38 +68,13 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.classList.remove("show");
     menuOverlay.classList.remove("show");
     mobileMenuBtn.classList.remove("active");
+    
+    // Restore body scroll
     document.body.classList.remove("menu-open");
+    const scrollY = document.body.style.top;
     document.body.style.top = '';
-    
-    // Restore scroll position
-    window.scrollTo(0, scrollPosition);
-    
-    // Re-enable touch scrolling
-    document.removeEventListener('touchmove', preventScroll);
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
   }
-
-  // Prevent scroll function for iOS
-  function preventScroll(e) {
-    if (!navLinks.contains(e.target)) {
-      e.preventDefault();
-    }
-  }
-
-  // Handle window resize
-  window.addEventListener('resize', function() {
-    if (window.innerWidth > 768 && navLinks.classList.contains("show")) {
-      closeMobileMenu();
-    }
-  });
-
-  // Handle orientation change
-  window.addEventListener('orientationchange', function() {
-    setTimeout(function() {
-      if (window.innerWidth > 768 && navLinks.classList.contains("show")) {
-        closeMobileMenu();
-      }
-    }, 100);
-  });
 
   // Cart functionality removed
 
