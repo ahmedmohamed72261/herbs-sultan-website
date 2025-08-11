@@ -1,0 +1,52 @@
+/* Missing Button Styles */
+.btn-glow {
+    background: linear-gradient(to right, #2e7d32, #4caf50);
+    color: white;
+    border: none;
+    padding: 0 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.btn-glow:hover {
+    background: linear-gradient(to right, #1b5e20, #2e7d32);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3);
+}
+
+.btn-glow::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    z-index: 1;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.btn-glow:hover::before {
+    animation: shine 1.5s;
+}
+
+@keyframes shine {
+    0% {
+        left: -50%;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        left: 150%;
+        opacity: 0;
+    }
+}

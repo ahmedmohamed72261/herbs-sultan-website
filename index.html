@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GreenGlobeHerbs - Premium organic herbs and spices sourced from sustainable farms around the world"
+    />
+    <title>GreenGlobeHerbs - Organic Herbs & Spices</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/button-animations.css" />
+    <link rel="stylesheet" href="css/loading.css" />
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay">
+      <div class="loading-spinner"></div>
+      <p class="loading-text">Loading GreenGlobeHerbs...</p>
+    </div>
+    <!-- Header Section -->
+    <header>
+      <div class="logo-container">
+        <img
+          src="assets/images/logo.svg"
+          alt="GreenGlobeHerbs Logo"
+          class="logo"
+        />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Search and cart removed -->
+      <div class="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Hero Slider Section -->
+    <section class="hero-slider">
+      <div class="slider-container">
+        <div class="slide active">
+          <div
+            class="slide-image"
+            style="background-image: url('assets/images/slider-last-1.jpg')"
+          ></div>
+          <div class="slide-content">
+            <h1 data-aos="fade-up">Organic Herbs & Spices</h1>
+            <p data-aos="fade-up" data-aos-delay="100">
+              Discover our premium selection of certified organic herbs and
+              spices, sourced from sustainable farms around the world.
+            </p>
+            <a href="https://wa.me/201278201346?text=Hello! I'm interested in your organic herbs and spices collection. Could you please provide more information about your premium products?" target="_blank" class="whatsapp-contact">
+              <i class="fab fa-whatsapp"></i>
+              Contact Us 
+            </a>
+          </div>
+        </div>
+        <div class="slide">
+          <div
+            class="slide-image"
+            style="background-image: url('assets/images/slider-last-2.jpg')"
+          ></div>
+          <div class="slide-content">
+            <h1 data-aos="fade-up">Health & Wellness</h1>
+            <p data-aos="fade-up" data-aos-delay="100">
+              Enhance your health with our natural products, carefully selected
+              for their nutritional benefits and healing properties.
+            </p>
+            <a href="https://wa.me/201278201346?text=Hello! I'm interested in learning about the health benefits of your natural herbs and spices. Could you provide more information about your wellness products?" target="_blank" class="whatsapp-contact">
+              <i class="fab fa-whatsapp"></i>
+              Contact Us
+            </a>
+          </div>
+        </div>
+        <div class="slide">
+          <div
+            class="slide-image"
+            style="background-image: url('assets/images/slider-last-3.jpg')"
+          ></div>
+          <div class="slide-content">
+            <h1 data-aos="fade-up">Sustainable Farming</h1>
+            <p data-aos="fade-up" data-aos-delay="100">
+              We partner with farmers who practice sustainable agriculture,
+              ensuring environmental preservation and product quality.
+            </p>
+            <a href="https://wa.me/201278201346?text=Hello! I'm interested in learning about your sustainable farming practices and how you ensure product quality. Could you tell me more about your farms?" target="_blank" class="whatsapp-contact">
+              <i class="fab fa-whatsapp"></i>
+              Contact Us
+            </a>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="prev-slide">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+          </div>
+          <button class="next-slide">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+      <h2 class="section-title" data-aos="fade-up">About Us</h2>
+      <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+        <div class="about-image">
+          <video autoplay loop muted playsinline class="about-video">
+            <source src="assets/videos/cooking-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="about-text">
+          <h3>Our Story</h3>
+          <p>
+            GreenGlobeHerbs is one of the leading companies in the field of
+            exporting medicinal herbs, legumes, spices, and seeds, with many
+            years of experience, an excellent reputation, and outstanding
+            product quality. We export a wide range of products including basil,
+            peppermint, thyme, oregano, anise, fennel, and many others. Our
+            focus is to meet the needs of the global market by offering high
+            quality and competitive prices. We are committed to continuous
+            improvement in our operations to achieve customer satisfaction and
+            maintain the perfect balance between quality and economy.
+          </p>
+          <a href="about.html"
+            ><button class="read-more btn-bounce">Read More</button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Organic Products Section -->
+    <section id="organic" class="organic-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Our Organic Products</h2>
+        <div class="organic-intro" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            At Herb & Spice Market, we believe in the power of organic farming
+            and sustainable agriculture. Our organic products are grown without
+            synthetic pesticides, fertilizers, or GMOs, ensuring you receive the
+            purest, most nutritious ingredients possible.
+          </p>
+        </div>
+
+        <div class="organic-benefits" data-aos="fade-up">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Naturally Grown</h3>
+            <p>
+              Our products are grown using natural methods that preserve soil
+              health and biodiversity.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Certified Organic</h3>
+            <p>
+              All our organic products are certified by recognized international
+              organic certification bodies.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Health Benefits</h3>
+            <p>
+              Organic products contain higher levels of beneficial nutrients and
+              antioxidants.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <h3>Eco-Friendly</h3>
+            <p>
+              Our organic farming practices help reduce pollution and conserve
+              water and energy.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <h3>Sustainably Harvested</h3>
+            <p>
+              Our crops are cultivated and gathered with care to protect the land, support ecosystems, and ensure long-term productivity.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+            <h3>Premium Quality</h3>
+            <p>
+              Every product is carefully selected and processed to maintain its natural flavor, aroma, and freshness.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="featured-products" class="featured-products-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Featured Products</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Discover our premium selection of organic herbs and spices
+        </p>
+
+        <!-- Category Tabs for Home Products -->
+        <div
+          class="category-tabs"
+          id="home-category-tabs"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
+          <!-- Category tabs will be loaded dynamically by home-products.js -->
+        </div>
+
+        <div
+          class="gallery-grid"
+          id="home-products-grid"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <!-- Products will be loaded dynamically by home-products.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Home Contact Section -->
+    <section class="home-contact-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-right">
+            <h2>Get In Touch</h2>
+            <p>
+              Have questions about our products or services? Fill out the form
+              and our team will get back to you as soon as possible.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h3>Our Location</h3>
+                  <p data-contact-type="address">Loading...</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h3>Phone Number</h3>
+                  <p data-contact-type="phone">Loading...</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h3>Email Address</h3>
+                  <p data-contact-type="email">Loading...</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h3>Working Hours</h3>
+                  <p>Available all time - 24/7</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form" data-aos="fade-left">
+            <h2>Send Us A Message</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn btn-shine">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-logo-container">
+        <img
+          src="assets/images/logo.svg"
+          alt="Green Globe Herbs Logo"
+          class="footer-logo"
+        />
+      </div>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>USEFUL LINKS</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>CONTACT US</h3>
+          <ul>
+            <li>Egypt,</li>
+            <li>Beni Suef,</li>
+            <li>Sumusta Al Waqf</li>
+            <li>
+              Mazen Phone: <a href="tel:00201554780003">00201554780003</a>
+            </li>
+            <li>
+              Sarah Phone: <a href="tel:00201009828879">00201009828879</a>
+            </li>
+            <li>Omar Phone: <a href="tel:00201016678933">00201016678933</a></li>
+            <li>
+              Mazen Email:
+              <a href="mailto:ceo@el-fayez.net">ceo@el-fayez.net</a>
+            </li>
+            <li>
+              Sarah Email:
+              <a href="mailto:info@el-fayez.net">info@el-fayez.net</a>
+            </li>
+            <li>
+              Omar Email:
+              <a href="mailto:sales@el-fayez.net">sales@el-fayez.net</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>About GreenGlobeHerbs</h3>
+          <p>
+            At GreenGlobeHerbs, we proudly export premium medicinal herbs,
+            legumes, spices, and seeds worldwide. With years of experience,
+            we've earned a strong reputation for quality products, professional
+            service, and customer satisfaction. Our range includes basil,
+            peppermint, thyme, oregano, anise, fennel, and more—carefully grown,
+            harvested, and processed to preserve their natural aroma, flavor,
+            and health benefits. We focus on superior quality, competitive
+            prices, and sustainable practices, ensuring excellence from farm to
+            customer and making us a trusted global partner.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fas fa-mobile-alt"></i></a>
+            <a href="mailto:info@el-fayez.net"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a href="https://wa.me/201009480722"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div>
+          <p>&copy; Copyright GreenGlobeHerbs. All Rights Reserved</p>
+        </div>
+        <div>
+          Designed by <a href="https://wa.me/201009480722" style="color: #4caf50; text-decoration: none;"><i class="fab fa-whatsapp"></i> Code Never Lies</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/201278201346"
+      class="whatsapp-button"
+      target="_blank"
+      title="Contact Us About Herbs & Spices"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Go to Top Button -->
+    <a href="#" class="go-to-top" id="goToTop">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/api-service.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/home-products.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/about-video.js"></script>
+    <script src="js/scroll-to-top.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/home-contact.js"></script>
+  </body>
+</html>
