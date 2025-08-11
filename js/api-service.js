@@ -1,4 +1,4 @@
-// API Service for HerbaCure Frontend
+// API Service for Green Globe Herbs Frontend
 // Base API URL - Change this to your deployed backend URL
 const API_BASE_URL = 'https://herbs-dashboard-backend-sultan.vercel.app/api';
 

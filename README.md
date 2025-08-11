@@ -1,6 +1,6 @@
-# HerbaCure Frontend - API Integration
+# Green Globe Herbs Frontend - API Integration
 
-This frontend is now connected to the HerbaCure backend API deployed at `https://herbs-dashboard-backend.vercel.app/`.
+This frontend is now connected to the Green Globe Herbs backend API deployed at `https://herbs-dashboard-backend.vercel.app/`.
 
 ## Features
 

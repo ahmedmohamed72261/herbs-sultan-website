@@ -1,5 +1,5 @@
-// Contact Form Manager
-class ContactFormManager {
+// Home Contact Form Manager
+class HomeContactFormManager {
     constructor() {
         this.form = null;
         this.submitButton = null;
@@ -7,6 +7,7 @@ class ContactFormManager {
     }
 
     initialize() {
+        // Initialize contact form on home page
         this.form = document.getElementById('contactForm');
         if (this.form) {
             this.submitButton = this.form.querySelector('.submit-btn');
@@ -14,8 +15,6 @@ class ContactFormManager {
             this.setupValidation();
         }
         
-        this.setupFAQ();
-        this.setupButtonEffects();
         this.loadContactInfo();
     }
 
@@ -138,9 +137,6 @@ class ContactFormManager {
             this.showMessage('Thank you for your message! We will get back to you soon.', 'success');
             this.form.reset();
             
-            // Track successful submission
-            this.trackFormSubmission(messageData);
-            
         } catch (error) {
             console.error('Failed to send message:', error);
             
@@ -151,13 +147,13 @@ class ContactFormManager {
             
         } finally {
             this.isSubmitting = false;
-            this.updateSubmitButton('Send Message', false);
+            this.updateSubmitButton('Send Message <i class="fas fa-paper-plane"></i>', false);
         }
     }
 
-    updateSubmitButton(text, disabled) {
+    updateSubmitButton(html, disabled) {
         if (this.submitButton) {
-            this.submitButton.textContent = text;
+            this.submitButton.innerHTML = html;
             this.submitButton.disabled = disabled;
             
             if (disabled) {
@@ -181,16 +177,6 @@ class ContactFormManager {
             localStorage.setItem('contactMessages', JSON.stringify(messages));
         } catch (error) {
             console.error('Failed to store message locally:', error);
-        }
-    }
-
-    trackFormSubmission(messageData) {
-        // Track form submission for analytics
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'form_submit', {
-                event_category: 'Contact',
-                event_label: messageData.subject
-            });
         }
     }
 
@@ -269,79 +255,12 @@ class ContactFormManager {
     setFallbackContactInfo() {
         // Set fallback contact information if API fails
         const fallbackData = [
-            { type: 'address', value: '123 Spice Market Street, Herb City, HC 12345' },
-            { type: 'phone', value: '+1 (555) 123-4567' },
-            { type: 'email', value: 'info@greenglobeherbs.com' }
+            { type: 'address', value: 'Egypt, Beni Suef, Sumusta Al Waqf' },
+            { type: 'phone', value: '+20 1009480722' },
+            { type: 'email', value: 'info@.net' }
         ];
         
         this.updateContactDisplay(fallbackData);
-    }
-
-    setupFAQ() {
-        const faqItems = document.querySelectorAll('.faq-item');
-        
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            
-            question.addEventListener('click', function() {
-                // Close all other FAQ items
-                faqItems.forEach(otherItem => {
-                    if (otherItem !== item && otherItem.classList.contains('active')) {
-                        otherItem.classList.remove('active');
-                        const otherIcon = otherItem.querySelector('.faq-toggle i');
-                        if (otherIcon) {
-                            otherIcon.classList.remove('fa-minus');
-                            otherIcon.classList.add('fa-plus');
-                        }
-                    }
-                });
-                
-                // Toggle current FAQ item
-                item.classList.toggle('active');
-                
-                // Change icon
-                const icon = item.querySelector('.faq-toggle i');
-                if (icon) {
-                    if (item.classList.contains('active')) {
-                        icon.classList.remove('fa-plus');
-                        icon.classList.add('fa-minus');
-                    } else {
-                        icon.classList.remove('fa-minus');
-                        icon.classList.add('fa-plus');
-                    }
-                }
-            });
-        });
-    }
-
-    setupButtonEffects() {
-        // Submit button effects
-        if (this.submitButton) {
-            this.submitButton.addEventListener('mouseenter', function() {
-                if (!this.disabled) {
-                    this.style.transform = 'translateY(-2px)';
-                    this.style.boxShadow = '0 5px 15px rgba(40, 167, 69, 0.3)';
-                }
-            });
-            
-            this.submitButton.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-            });
-        }
-
-        // Social button effects
-        const socialBtns = document.querySelectorAll('.social-btn');
-        socialBtns.forEach(btn => {
-            btn.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-3px) scale(1.1)';
-                this.style.transition = 'transform 0.3s ease';
-            });
-            
-            btn.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
     }
 
     isValidEmail(email) {
@@ -357,6 +276,6 @@ class ContactFormManager {
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    const contactManager = new ContactFormManager();
-    contactManager.initialize();
+    const homeContactManager = new HomeContactFormManager();
+    homeContactManager.initialize();
 });

@@ -48,7 +48,7 @@ class ProductDetailsManager {
         }
 
         // Update page title
-        document.title = `${this.product.name} - HerbaCure`;
+        document.title = `${this.product.name} - GreenGlobeHerbs`;
 
         // Prepare product images
         this.productImages = [];
@@ -96,7 +96,7 @@ class ProductDetailsManager {
                 ` : ''}
 
                 <div class="product-description">
-                    ${this.product.description || 'Premium quality product from HerbaCure.'}
+                    ${this.product.description || 'Premium quality product from GreenGlobeHerbs.'}
                 </div>
 
                 <div class="product-meta">
